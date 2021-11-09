@@ -8,23 +8,23 @@ var value = 0;
 var output = document.getElementById("output");
 var table = "";
 
-if(isNaN(firstNum)){
-    document.getElementById("1n").innerHTML = 'Please enter a valid number for Starting Vertical Number';
+if(isNaN(firstNum) || firstNum < -55){
+    document.getElementById("1n").innerHTML = 'Please enter a valid number for Starting Vertical Number (x > -56 )';
     document.getElementById("1n").style.color = "red";
 }
 
-    if(isNaN(secondNum)){
-    document.getElementById("2n").innerHTML = 'Please enter a valid number for Ending Vertical Number';
+    if(isNaN(secondNum) || secondNum > 50){
+    document.getElementById("2n").innerHTML = 'Please enter a valid number for Ending Vertical Number (x < 51) ';
     document.getElementById("2n").style.color = "red";
 }
     
-    if(isNaN(thirdNum)){
-    document.getElementById("3n").innerHTML = 'Please enter a valid number for Starting Horizontal Number';
+    if(isNaN(thirdNum) || thirdNum < -55){
+    document.getElementById("3n").innerHTML = 'Please enter a valid number for Starting Horizontal Number (x > -56)';
     document.getElementById("3n").style.color = "red";
 }
     
-    if(isNaN(forthNum)){
-    document.getElementById("4n").innerHTML = 'Please enter a valid number for Starting Horizontal Number';
+    if(isNaN(forthNum) || forthNum > 50){
+    document.getElementById("4n").innerHTML = 'Please enter a valid number for Starting Horizontal Number (x < 51)';
     document.getElementById("4n").style.color = "red";
 }
 
